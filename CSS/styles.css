@@ -1,0 +1,120 @@
+#title{
+  background-color: #06283D;
+  color: #DFF6FF;
+margin-bottom: 0;}
+.container-fluid{
+  padding: 3% 15%;
+}
+body{
+  font-family: "Montserrat";
+  color: #DFF6FF;
+  padding:0;
+  margin:0;
+}
+.navbar{
+  padding-bottom: 0 0 2.5rem;
+}
+.navbar-brand{
+  font-family: "Ubuntu";
+  font-size: 2.5rem;
+  font-weight: bold;
+  padding-left: 0;
+  margin-left: 0;
+}
+.nav-item{
+  padding: 0 18px;
+}
+.donate{
+  margin-left: 10px;
+}
+.nav-link{
+  padding-bottom: 1rem;
+  font-size: 1.2rem;
+  font-family: "Montserrat-light";
+}
+.title-heading{
+  font-family: "Montserrat-black";
+  font-weight: 900;
+  font-size: 3.5rem;
+  line-height: 1.5;}
+.signupcol{
+  margin-bottom: 2px;
+}
+.sign-btn{
+  margin: 5% 3% 5% 0;
+}
+  @media (max-width:960px) {
+    #title{
+      text-align: center;
+    }
+    .title-heading{
+      font-size: 3rem;
+    }
+  }
+  .newsletter {
+  padding: 80px 0;
+  background: #DFF6FF;
+  }
+
+  .newsletter .content {
+  max-width: 650px;
+  margin: 0 auto;
+  text-align: center;
+  position: relative;
+  z-index: 2; }
+  .newsletter .content h2 {
+  color: #06283D;
+  margin-bottom: 40px; }
+  .newsletter .content .form-control {
+  height: 50px;
+  border-color: #ffffff;
+  border-radius:0;
+  }
+  .newsletter .content.form-control:focus {
+  box-shadow: none;
+  border: 2px solid #243c4f;
+  }
+  .newsletter .content .btn {
+  min-height: 50px;
+  border-radius:0;
+  background: #06283D;
+  color: #fff;
+  font-weight:600;
+  }
+  #feedback{
+    text-align:center;
+    padding-top: 2.5%;
+    padding-bottom: 2.5%;
+  }
+  .feedback-but{
+    margin-top: 1%;
+    margin-bottom: 0;
+  }
+  #feedback h2{
+    color:black;
+    font-family: "Ubuntu";
+  }
+  #feedback p{
+    color:black;
+    font-family: "Montserrat";
+  }
+  #feedback a{
+    align-items: center;
+    text-align: center;
+  }
+  #footer{
+    padding-top: 50px;
+    text-align: center;
+    background-color: #06283D;
+    color: #DFF6FF;
+    font-family: "Montserrat";
+    line-height: 1.5;
+    font-size: 0.8rem;
+    padding-bottom: 30px;
+  }
+  .social-media{
+    margin-right: 10px;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    color: #256D85;
+    font-size: 1rem;
