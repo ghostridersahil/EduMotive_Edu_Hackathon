@@ -27,7 +27,7 @@
   <meta name="msapplication-TileImage" content="Images/favicon/ms-icon-144x144.png">
   <meta name="theme-color" content="#ffffff">
        
-    <link rel="stylesheet" href="jobstyle.css" />
+    <link rel="stylesheet" href="jobstyle.css" >
         <title>Your Feedback</title>
      
 </head>
@@ -47,7 +47,7 @@
         }
 
         .container {
-            background-color: azure;
+            background-color: #008374;
             padding: 50px 100px 50px 100px;
             border: 1px solid lightgrey;
             border-radius: 4px;
@@ -65,8 +65,13 @@
         }
 
         fieldset {
-            background-color: rgb(94, 213, 213);
+            background-color: #00b6a1;
             border: 1px solid #ccc;
+        }
+        @media (max-with:900px) {
+          fieldset .mainheading{
+            text-align: center;
+          }
         }
 
         .mainheading {
@@ -125,9 +130,17 @@
                               </select>
                         </p>
 
-                    <input type="submit" value="Send" />
+                    <input id="submit" type="submit" value="Send" onclick="auth()">
                   </form>
             </div>
+        <!-- <script>
+        function auth()
+        {
+          document.getElementById("submit").alert("Form Submitted Successfully");
+          window.location.assign("index.html");
+        }
+
+        </script> -->
       </body>
 
 </html>

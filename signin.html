@@ -26,13 +26,17 @@
 
     <!-- Bootstrap CSS -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.6.2/dist/css/bootstrap.min.css" integrity="sha384-xOolHFLEh07PJGoPkLv1IbcEPTNtaed2xpHsD9ESMhqIYd0nLMwNLD69Npy4HI+N" crossorigin="anonymous">
-    <linl rel="stylsheet" href="signin.css">
+    <linl rel="stylesheet" href="signin.css">
 
     <title>Sign Up Page</title>
-
+<style media="screen">
+  .bg-dark{
+    background-color: #008374!important;
+  }
+</style>
   </head>
   <body>
-    <section class="vh-100 gradient-custom" style="background:#cacaca">
+    <section class="vh-100 gradient-custom" style="background:#00b6a1">
         <div class="container py-5 h-100">
           <div class="row d-flex justify-content-center align-items-center h-100">
             <div class="col-12 col-md-8 col-lg-6 col-xl-5">
@@ -40,7 +44,7 @@
                 <div class="card-body p-5 text-center">
 
                   <div class="mb-md-5 mt-md-4 pb-5" >
-
+<img src="Images/logo.png" alt="logo" style="border-radius:100%; height:7rem; width:7rem">
                     <h2 class="fw-bold mb-2 text-uppercase">Login</h2>
                     <p class="text-white-50 mb-5">Please enter your login and password!</p>
 
@@ -93,19 +97,27 @@
       function auth(){
         var email=document.getElementById("email").value;
         var password=document.getElementById("password").value;
+        var flag = false;
         if(email=="sahilvol@gmail.com" && password=="sahil123"){
 
           window.location.assign("volunteer.html");
+          flag = true;
           alert("login sucessfully");
         }
         else if(email=="sahilpart@gmail.com" && password=="sahil123"){
           window.location.assign("partner.html");
           alert("login sucessfully");
+          flag = true;
         }
 
         else{
           alert("Invalid Crudentials");
           return;
+        }
+        if (flag===true)
+        {
+          var dis = document.getElementById("avatar");
+          dis.style.visibility = "visible";
         }
       }
     </script>
